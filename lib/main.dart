@@ -1,40 +1,60 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_app_bar/gradient_app_bar.dart';
-
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Woolha.com Flutter Tutorial',
-      home: _ElevatedButtonExample(),
+      title: 'Flutter Demo',
       theme: ThemeData(
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            primary: Colors.purple,
-          ),
-        ),
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: MyHomePage(),
     );
   }
 }
 
-class _ElevatedButtonExample extends StatelessWidget {
+class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: GradientAppBar(
-        title: Text('widget.title'),
-        backgroundColorStart: Color.fromRGBO(178, 208, 248, 1.0),
-        backgroundColorEnd: Color.fromRGBO(50, 82, 123, 0.5),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('sign in'),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: <Color>[
+                    Color.fromRGBO(42,105,173,1.0),
+                    Color.fromRGBO(41,115,183,1.0),
+                    Color.fromRGBO(38,137,194,1.0),
+                    Color.fromRGBO(35,164,206,1.0),
+                    Color.fromRGBO(32,189,219,1.0),
+                    Color.fromRGBO(32,213,234,1.0),
+                    Color.fromRGBO(28,235,245,1.0),
+                    Color.fromRGBO(27,255,254,1.0)
+
+                  ])
+          ),
+        ),
       ),
       body: Center(
-        child: ElevatedButton(
-          child: Text('.com'),
-          onPressed: () {
-            print('Pressed');
-          },
+        child: Container(
+          child: Center(
+            child: Text(
+              'Hello Gradient!',
+              style: TextStyle(
+                fontSize: 48.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
         ),
       ),
     );
