@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "660633110747",
+    "project_id": "expiry-remainder-app",
+    "storage_bucket": "expiry-remainder-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660633110747:android:9f39d4405719194904e4fe",
+        "android_client_info": {
+          "package_name": "com.researchpaper.expiry_remainder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660633110747-316844pfu8m5vpmrepfr3b5nfo4ofa85.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.researchpaper.expiry_remainder",
+            "certificate_hash": "202690c1877e1eda7e1dae5aa51c57bc207be4be"
+          }
+        },
+        {
+          "client_id": "660633110747-3tbutrhsd403ooh90akqrpjt592cbs21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFN_7XnNz9oMpOIYe_uRyQ_omuK81wUzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660633110747-3tbutrhsd403ooh90akqrpjt592cbs21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
