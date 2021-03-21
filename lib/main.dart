@@ -1,6 +1,8 @@
 import 'dart:ui';
+import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:expiry_remainder/customer_login.dart';
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -45,10 +47,10 @@ class SigninPage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: const DecorationImage(
-            image: AssetImage('assets/homebg.jpg'), fit: BoxFit.fill),
+            image: Svg('assets/homebg.svg'), fit: BoxFit.cover),
       ),
       child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5),
+        filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
         child: Scaffold(
             backgroundColor: Colors.transparent,
             body: Center(
