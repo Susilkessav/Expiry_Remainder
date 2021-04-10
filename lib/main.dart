@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:expiry_remainder/customer_login.dart';
+import 'package:expiry_remainder/seller_login.dart';
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:google_fonts/google_fonts.dart';
@@ -103,7 +104,7 @@ class SigninPage extends StatelessWidget {
                                   RoundedRectangleBorder(
                                       borderRadius:
                                           BorderRadius.circular(50)))),
-                      onPressed: () {},
+                      onPressed: () => gotoSellerLogin(context),
                       child: Text(
                         "Sign in as seller",
                         style: GoogleFonts.lato(
@@ -122,4 +123,9 @@ class SigninPage extends StatelessWidget {
 Future gotoCustomerLogin(context) async {
   Navigator.push(
       context, MaterialPageRoute(builder: (context) => CustomerLoginPage()));
+}
+
+Future gotoSellerLogin(context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => SellerLoginPage()));
 }
